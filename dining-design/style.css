@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root{
+    --textColor: rgb(255, 255, 255);
+    --activeColor: rgb(231, 233, 233);
+    --highlightColor: rgb(84, 138, 155);
+    --logoColor: rgb(6, 80, 103);
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+header{
+    background-image: url(images/restaurant.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+}
+a{
+    color: var(--textColor);
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: 100%;
+}
+nav{
+    padding: 1rem 0;
+}
+.pre-nav{
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pre-nav a:last-child{
+    text-shadow: 1px 1px black;
+}
+.logo{
+    color: var(--logoColor);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+nav li{
+    flex: 1 auto;
+}
+nav li a{
+    background-color: var(--logoColor);
+    display: block;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+nav a.active{
+    background-color: var(--activeColor);
+    color: var(--logoColor);
+    font-weight: bold;
+}
+nav a.highlight{
+    background-color: var(--highlightColor);
+}
+nav a:hover{
+    opacity: 0.9;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;
+    margin-top: 3rem;
+}
+.content h1{
+    background-color: var(--highlightColor);
+    color: var(--textColor);
+    display: inline-block;
+    padding: 1rem;
+    font-weight: 200;
+}
+.white-link{
+    background-color: var(--textColor);
+    color: var(--logoColor);
+    padding: 0.5rem;
+}
+.teal-link{
+    background-color: var(--logoColor);
+    color: var(--textColor);
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .pre-nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul{
+        font-size: 1rem;
+    }
+    .content{
+        font-size: 1rem;
+    }
+}
+@media  screen and (max-width: 602px) {
+    .pre-nav{
+        font-size: 1rem;
+    }
+    .logo{
+        font-size: 2rem;
+    }
+
+}
