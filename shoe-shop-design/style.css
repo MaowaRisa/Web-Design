@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F09900;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    transition: background 0.5s ease-in-out;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.hamburger{
+    position: fixed;
+    border: none;
+    background: transparent;
+    color: white;
+    top: 2rem;
+    left: 2rem;
+    font-size: 3rem;
+}
+.phone{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+}
+.logo{
+    color: white;
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.7rem;
+}
+.logo h2{
+    font-weight: normal;
+    margin: 0;
+}
+.logo p{
+    color: rgb(64, 35, 35);
+    margin: 0;
+}
+.carousel-container{
+    overflow: hidden;
+    height: 70vh;
+    position: relative;
+    width: 100vw;
+    margin-top: 6rem;
+}
+.carousel{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(0);
+    transition: transform 0.4s ease-in-out ;
+}
+.slide{
+    width: 100vw;
+    text-align: center;
+}
+.slide img{
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
+.slide h1{
+    color: white;
+    font-size: 3.5rem;
+    margin-top: -2rem;
+}
+.slide a{
+    background-color: #635b4d;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+.arrow{
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    top: 37%;
+    transform: translateY(-50%);
+    font-size: 5rem;
+    color: black;
+    opacity: 0.5;
+}
+.left-arrow{
+    left: 2rem;
+}
+.right-arrow{
+    right: 2rem;
+}
